@@ -107,3 +107,7 @@ Malformed glyphstones are termed cenotaphs.
 Glyphs input to a transaction with a cenotaph are burned. Glyphs etched in a transaction with a cenotaph are set as unmintable. Mints in a transaction with a cenotaph count towards the mint cap, but the minted glyphs are burned.
 
 Cenotaphs are an upgrade mechanism, allowing glyphstones to be given new semantics that change how glyphs are created and transferred, while not misleading unupgraded clients as to the location of those glyphs, as unupgraded clients will see those glyphs as having been burned.
+
+## See Also
+
+- [Conventions](./CONVENTIONS.md)

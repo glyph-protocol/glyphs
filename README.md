@@ -114,7 +114,7 @@ Cenotaphs are an upgrade mechanism, allowing glyphstones to be given new semanti
 
 Glyphs was originally going to use its own magic number.  But instead it will reuse runes OP_13, for backwards compatibility.  Previous to Aug 9 on testnet OP_16 was used for testing.
 
-Optionally in a Glyph you can use enum 251=1 (from the monas heiroglyphica) to indicate a glyph.
+Optionally in a Glyph you can use enum 123=1 (from the monas heiroglyphica) to indicate a glyph.
 
 ## Status
 

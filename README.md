@@ -1,4 +1,4 @@
-`version 0.0.0`
+`version 0.0.1`
 
 # Glyphs
 
@@ -110,9 +110,15 @@ Glyphs input to a transaction with a cenotaph are burned. Glyphs etched in a tra
 
 Cenotaphs are an upgrade mechanism, allowing glyphstones to be given new semantics that change how glyphs are created and transferred, while not misleading unupgraded clients as to the location of those glyphs, as unupgraded clients will see those glyphs as having been burned.
 
+## Magic Numbers
+
+Glyphs was originally going to use its own magic number.  But instead it will reuse runes OP_13, for backwards compatibility.  Previous to Aug 9 on testnet OP_16 was used for testing.
+
+Optionally in a Glyph you can use enum 251=1 (from the monas heiroglyphica) to indicate a glyph.
+
 ## Status
 
-Glyphs are currently being built and should be considered unstable.  Indexing should begin 4 months after the bitcoin halving.
+Given that glyphs are now backwards compatible with Runes they can be considered live.  Glyphs reserves the right to deviate from runes if anything is considered harmful to bitcoin, such as large inscriptions taking up block space.
 
 ## See Also
 

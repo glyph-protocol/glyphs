@@ -1,3 +1,5 @@
+`version 0.0.0`
+
 # Glyphs
 
 Glyphs allow Bitcoin transactions to etch, mint, and transfer Bitcoin-native digital commodities.  They are very similar to the Runes protocol, but rely soley on OP_RETURNs, and do not support inscriptions.  Glyphs are designed to be compatible with nostr npubs and bitcoin taproot.
@@ -8,7 +10,7 @@ Whereas every glyph is unique, every unit of a glyph is the same. They are inter
 
 Glyph protocol messages, called glyphstones, are stored in Bitcoin transaction outputs.
 
-A glyphstone output's script pubkey begins with an OP_RETURN, followed by OP_3, followed by zero or more data pushes. These data pushes are concatenated and decoded into a sequence of 128-bit integers, and finally parsed into a glyphstone.
+A glyphstone output's script pubkey begins with an OP_RETURN, followed by OP_13, followed by zero or more data pushes. These data pushes are concatenated and decoded into a sequence of 128-bit integers, and finally parsed into a glyphstone.
 
 A transaction may have at most one glyphstone.
 
@@ -107,6 +109,10 @@ Malformed glyphstones are termed cenotaphs.
 Glyphs input to a transaction with a cenotaph are burned. Glyphs etched in a transaction with a cenotaph are set as unmintable. Mints in a transaction with a cenotaph count towards the mint cap, but the minted glyphs are burned.
 
 Cenotaphs are an upgrade mechanism, allowing glyphstones to be given new semantics that change how glyphs are created and transferred, while not misleading unupgraded clients as to the location of those glyphs, as unupgraded clients will see those glyphs as having been burned.
+
+## Status
+
+Glyphs are currently being built and should be considered unstable.  Indexing should begin 4 months after the bitcoin halving.
 
 ## See Also
 
